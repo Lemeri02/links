@@ -1,30 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-# README
-
 ## Тестовое задание
 
 ---
@@ -69,6 +44,11 @@ $ bundle
 
 ### Инструкция для запуска и проверки
 
+Запустите сервер
+```
+$ rails s
+```
+
 Откройте ПО `Postman` или `Insomnia`
 
 #### Запрос 1
@@ -93,7 +73,7 @@ POST /visited_links
 Получаем GET-запросом списка уникальных доменов, посещенных за переданный интервал времени
 
 ```
-GET /visited_domains?from=1545221231&to=1545217638
+GET /visited_domains?from=1613314809&to=1613574809
 
 {
   "domains": [
@@ -105,7 +85,7 @@ GET /visited_domains?from=1545221231&to=1545217638
 }
 ```
 
-_! Примечание: Нужно передавать актуальное время_
+_! Примечание: Нужно передавать актуальное Unix-время_
 
 ### Тестирование
 Запуск тестов
